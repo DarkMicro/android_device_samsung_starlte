@@ -28,21 +28,23 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := starlte
-PRODUCT_NAME := lineage_starlte
+PRODUCT_NAME := aosp_starlte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G960F
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-BUILD_FINGERPRINT := samsung/starltexx/starlte:10/QP1A.190711.020/G960FXXUCFTK1:user/release-keys
+#BUILD_FINGERPRINT := samsung/starltexx/starlte:10/QP1A.190711.020/G960FXXUCFTK1:user/release-keys
+BUILD_FINGERPRINT := google/redfin/redfin:11/RQ1A.201205.010/6953398:user/release-keys
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=starltexx \
-    PRIVATE_BUILD_DESC="starltexx-user 10 QP1A.190711.020 G960FXXUCFTK1 release-keys"
+#PRODUCT_BUILD_PROP_OVERRIDES += \
+#    PRODUCT_NAME=starltexx \
+#    BUILD_FINGERPRINT := google/redfin/redfin:11/RQ1A.201205.010/6953398:user/release-keys
+#    PRIVATE_BUILD_DESC="starltexx-user 10 QP1A.190711.020 G960FXXUCFTK1 release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.PDA=G960FXXUCFTK1
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    lineage.updater.uri=https://raw.githubusercontent.com/synt4x93/OTA/lineage-18.1/starlte.json
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    lineage.updater.uri=https://raw.githubusercontent.com/synt4x93/OTA/lineage-18.1/starlte.json
